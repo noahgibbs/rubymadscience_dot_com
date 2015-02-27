@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: narrow_page
 title: Deploy Your Ruby App Right Now
 comments: false
 sharing: false
@@ -28,6 +28,8 @@ After that, here's the same thing to real production:
 
 If you edited that file to put in your app, and one more to add your Digital
 Ocean creds... Then your app is running on Digital Ocean.
+
+<img class="pull-right" src="/images/mad_scientist_01.jpg" alt="A scientist with a steaming flask"></img>
 
 Want to get started?
 

@@ -13,8 +13,8 @@ On a Mac? Here's how to deploy a test app to Vagrant.
 
     gem madscience install
     rvmsudo madscience setup  # install tools
-    git clone https://github.com/noahgibbs/madscience_deploy_repo
-    cd madscience_deploy_repo
+    git clone https://github.com/noahgibbs/madscience
+    cd madscience
     vagrant up --provision
     vagrant push development
 
@@ -33,7 +33,7 @@ Ocean creds... Then your app is running on Digital Ocean.
 
 Want to get started?
 
-<a href="http://github.com/noahgibbs/madscience_deploy_repo">Here's the GitHub repo</a>.
+<a href="http://github.com/noahgibbs/madscience">Here's the GitHub repo</a>.
 
 (Worried about the license? It's MIT.)
 
@@ -112,7 +112,7 @@ MIT. That means you can use this for open-source and commercial projects
 without a problem. I'd appreciate if you contribute fixes back, but you're not
 required to. It's up to you.
 
-<a href="http://github.com/noahgibbs/madscience_deploy_repo">The GitHub
+<a href="http://github.com/noahgibbs/madscience">The GitHub
 project</a> has issues, accepts pull requests and so on like you're used to.
 
 ### What? Who? Why?

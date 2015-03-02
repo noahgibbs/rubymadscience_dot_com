@@ -11,7 +11,7 @@ no_navbar: true
 
 On a Mac? Here's how to deploy a test app to Vagrant.
 
-    gem madscience install
+    gem install madscience
     rvmsudo madscience setup  # install tools
     git clone https://github.com/noahgibbs/madscience
     cd madscience

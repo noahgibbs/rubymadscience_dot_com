@@ -12,22 +12,29 @@ no_navbar: true
 On a Mac? Here's how to deploy a test app to Vagrant.
 
     gem install madscience
-    rvmsudo madscience setup  # install tools
-    git clone https://github.com/noahgibbs/madscience
-    cd madscience
-    vagrant up --provision
-    vagrant push development
+    rvmsudo madscience setup_clone_and_deploy  # install tools
+
+This will install all the tools you need locally, clone a repository called
+"madscience" under the current directory and deploy a test Rails application
+to that virtual server -- by default, on a VM running on your development
+system.
+
+Want to run your <b>own app</b> instead?
 
 Edit nodes/all_nodes.json.erb in that repo you cloned and it will clone your
-own real Rails (or Rack) app instead.
+own real Rails (or Rack) app instead. You'll need to either use a public URL
+(like a GitHub HTTP URL) or authorize the SSH key from
+~/.deploy_credentials/id_rsa_provisioning_4096.pub to check out your
+repository.
 
-After that, here's the same thing to real production:
+After that, here's the same thing to real production, run from inside that
+"madscience" directory:
 
     vagrant up --provision --provider=digital_ocean
-    vagrant push digital_ocean
 
-If you edited that file to put in your app, and one more to add your Digital
-Ocean creds... Then your app is running on Digital Ocean.
+If you edited all_nodes.json.erb to use your app, and
+~/.deploy_credentials/digital_ocean.json to use your DO account... Then your
+app is now running on Digital Ocean. For real.
 
 <img class="pull-right" src="/images/mad_scientist_01.jpg" alt="A scientist with a steaming flask"></img>
 

@@ -12,7 +12,7 @@ no_navbar: true
 On a Mac? Here's how to deploy a test app to Vagrant.
 
     gem install madscience
-    rvmsudo madscience setup_clone_and_deploy  # install tools
+    rvmsudo madscience construct  # install, clone repo, deploy server
 
 This will install all the tools you need locally, clone a repository called
 "madscience" under the current directory and deploy a test Rails application
